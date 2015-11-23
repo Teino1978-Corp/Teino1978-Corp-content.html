@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+    "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head><title>Static Positioning</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="element">
+
+<ul>
+  <li data-selector="element" class="selected">h2</li>
+  <li data-selector="id">div#main</li>
+  <li data-selector="class">.header</li>
+  <li data-selector="descend">div > div</li>
+  <li data-selector="complex">h2 + div > div[title~="one"]</li>
+</ul>
+
+<div title="main one">&lt;div title=&quot;main one&quot; /&gt;</div>
+<h2 class="header">&lt;h2 class=&quot;header&quot; /&gt;</h2>
+<div>&lt;div&gt;
+  <div id="main" title="main one">&lt;div id=&quot;main&quot; title=&quot;main one&quot; /&gt;</div>
+  <div class="header part" title="a second">&lt;div class=&quot;header part&quot; title=&quot;a second&quot; /&gt;</div>
+  <div title="one more">&lt;div title=&quot;one more&quot; /&gt;</div>&lt;/div&gt;
+</div>
+
+<!-- Code below is to toggle source and load scripts -->
+<button id="source">Toggle Source</button>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="script.js" type="text/javascript"></script>
+<script src="https://gist.github.com/2156149.js" type="text/javascript"></script>
+</body>
+</html>

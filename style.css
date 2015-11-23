@@ -1,0 +1,85 @@
+body.element  h2,
+body.id       div#main,
+body.class    .header,
+body.descend  div > div,
+body.complex  h2 + div > div[title~="one"] {
+  background-color: #deb887;
+}
+
+body > ul + * {
+  margin-top: 2em;
+}
+
+body > ul {
+  padding: 1em 0 0 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #deb887;
+}
+
+body > ul > li {
+  padding: 0;
+  margin: 0;
+  background-color: #deb887;
+}
+
+body > ul > li.selected {
+  background-color: #ff7f50;
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+div > div {
+  margin-left: 1em;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles to support toggling the source view */
+.gist {
+  font-size: 0.5em;
+  display: none;
+}
+
+div.gist .gist-file {
+  position: relative;
+  margin: 3em 0;
+}
+
+.gist-meta {
+  position: absolute;
+  top: -2.5em;
+  left: -30000px;
+}
+
+.gist-meta a {
+  display: none;
+}
+
+.gist-meta a:nth-child(2) {
+  position: relative;
+  padding-left: 30000px;
+  display: inline;
+}
+
+#source {
+  float: right;
+  clear: both;
+}
+
+body {
+  font-size: 4em;
+}
